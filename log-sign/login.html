@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="loginstyle.css">
+    <title>Login</title>
+</head>
+<body>
+
+  <div class="popup" id="popup" >
+  <img src="check.png">
+  <h2>Thank You!</h2>
+  <p>You have successfully logged in!</p>
+  <a href="../index.html"><button type="button" onclick="ClosePopup()">OK</button></a>
+</div>
+
+
+    <div class="login-container" id="mawawala">
+      <form class="login-form-container" id="loginform">
+          <img src="logo.png" alt="Pet Service Logo" class="logo" >
+          <h1 style="font-size: 25.89px;">Login</h1>
+          <input type="text" id="username" name="username" class="usernamebox" placeholder="Username" required>
+          <input type="password" id="password" name="password" class="passbox" placeholder="Password" required>
+
+          <button type="submit" class="btn" id="loginbutton" onclick="validateLogin()">Login</button>
+          <p class="error-message" id="errorMessage"></p>
+
+          <p><a href="forgotpass.html" style="font-size: 16px;">Forgot Password?</a></p> 
+          <p><a href="signup.html" style="font-size: 16px;">Don't have an account?Sign up.</a></p>
+      </form>
+    </div>
+</div>
+
+        
+
+    <script>
+      function validateLogin() {
+          var username = document.getElementById('username').value;
+          var password = document.getElementById('password').value;
+          var popupDiv = document.getElementById('popup');
+          let mawawala = document.getElementById('mawawala');
+            
+    
+            // Check if both inputs have values
+            if (username && password) {
+                // Prevent form submission
+                event.preventDefault();
+                // Perform login logic or any other action here
+                // Show the popup
+                popupDiv.classList.add("open-popup");
+                mawawala.style.display = 'none';
+          } else {
+              // Display an error message if either input is empty
+              alert('Please enter both username and password.');
+              return false; // Prevent form submission
+          }
+      }
+      function ClosePopup() {
+          var popupDiv = document.getElementById('popup');
+          popupDiv.classList.remove("open-popup");
+      }
+  </script>
+</body>
+</html>

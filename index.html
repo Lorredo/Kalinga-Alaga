@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title >  Kalinga Alaga</title>
+ <link rel="icon" href="imgs/logo.png"
+          type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="carousel.css">
+   
+    <link rel="stylesheet" href="pop.css">
+    <link rel="stylesheet" href="button34.css">
+    <link rel="stylesheet" href="scrollbar.css">  
+</head>
+<body padding-top: 60px;>
+    <!-- header-->
+    <div class="header">
+        <a href="index.html"><img id="logo" src="imgs/logo.png" alt="logo"></a>
+        <div class="header-left">
+            <ul class="header-right">
+                <li class="nav nav1"><a href="#home" class="link">Our Services</a> 
+                    <ul class="dropdown">
+                        <li ><a href="dogwalking.html">Pet Walking</a></li>
+                        <li><a href="pettraining.html">Pet Training</a></li>
+                        <li><a href="petphotography.html">Pet Photography</a></li>
+                        <li><a href="veterinarian.html">Veterinarian</a></li>
+                    </ul>
+                </li>
+                
+                <li class="nav"><a id="aboutus" class="link" onclick="openpopup();">About Us</a></li>
+                <li class="nav"><a  id="whyus" class="link" onclick="openpopup();">Why Us?</a></li>
+            </ul>
+        </div>
+         <!-- about us and why us -->
+         <div class="popup" id="popup" style=" background-color: #F9F9E0; border-radius: 10px; padding: 20px 40px 40px;">
+             <div id="popup1" >
+                 <span style=" position:absolute; top:0px; right: 20px; cursor: pointer;" onclick="closepopup();" class="close">&times;</span>
+                 <h2 style="text-align: center; font-size: 25.89px; margin-bottom: 25px;">About Us</h2>
+             <p style=" font-size: 16px; line-height: 25px;">
+                 Welcome to Kalinga Alaga, where passion meets care for your furry friends! At Kalinga Alaga, we understand the special bond you share with your pets, and we are dedicated to providing exceptional care and services to keep tails wagging and whiskers purring.
+                 Our team of experienced and compassionate pet care specialists is committed to ensuring the well-being and happiness of your beloved companions. Whether it's pet walking, training, photography, or veterinary services, we go the extra mile to create a nurturing environment for your pets.
+                 <br><br>What sets us apart is our unwavering commitment to quality, transparency, and the joy we find in caring for your pets as if they were our own. We pride ourselves on our professionalism, reliability, and the lasting relationships we build with both pets and their owners.
+                 Join us in creating a world where pets thrive, tails are always high, and every paw print leaves a mark of happiness. Discover the Kalinga Alaga difference today!
+                 Feel free to customize this brief to align with the specific values, services, and tone of your pet care service website.</p>
+             </div>
+ 
+             <div id="popup2">
+                 <span style=" position:absolute; top:0px; right: 20px; cursor: pointer;" onclick="closepopup();" class="close">&times;</span>
+             <h2 style="text-align: center; font-size: 25.89px; ">Why you might choose us?</h2>
+             <p style=" font-size: 16px; line-height: 25px; margin-bottom: 12px;">
+                 At Kalinga Alaga, we redefine pet care with unwavering dedication and unique offerings. Our services are available 24/7, ensuring your pet receives attention when they need it most. We're not just a service; we're a bonded and insured team committed to the safety and happiness of your furry family member. Our GPS-verified visits and dedicated professionals guarantee transparency, trust, and a personalized experience. Choose Kalinga Alaga for round-the-clock care and a team that treats your pet like one of our own.
+                 Discover the Kalinga Alaga difference - where availability meets assurance, and every visit is a step towards a tail-wagging, whisker-purring partnership.
+             </p>
+             <img src="imgs/available+24_7.gif" alt="" width="100%" height="70%" style="box-shadow: 2px 2px 2px 2px rgb(0, 0, 0, 0.2) ;;">
+             </div>
+         </div>
+ 
+        
+
+       
+
+        <div class="button-container">
+        <a href="log-sign/signup.html" class="signup" role="button">Signup</a>
+        <a href="log-sign/login.html" class="login" role="button" >Login</a>
+    </div>
+    <!-- for phone device menu bar and log-sign icon -->
+        <li id="sign-log-icon" class="nav1"><a href="#home" class="link" onclick="toggleDropdownforsignlog()"><img src="imgs/user-interface.png" alt="" width="40px" height="40px"></a> 
+          <ul class="dropdown1" id="dropdown1">
+              <li><a href="log-sign/login.html">Login</a></li>
+              <li><a href="log-sign/signup.html">Signup</a></li>
+          </ul>
+        </li>
+
+      
+    <li class="menu nav1" id="menu"><a href="#home" class="link" onclick="toggleDropdown()"><img src="imgs/menu.png" alt="" width="40px" height="40px"></a> 
+      <ul class="dropdown" id="dropdown">
+        <li class="nav"><a id="aboutus" class="link" onclick="openpopup();">About Us</a></li>
+              <li class="nav"><a  id="whyus" class="link" onclick="openpopup();">Why Us?</a></li>
+          <li ><a href="dogwalking.html">Pet Walking</a></li>
+          <li><a href="pettraining.html">Pet Training</a></li>
+          <li><a href="petphotography.html">Pet Photography</a></li>
+          <li><a href="veterinarian.html">Veterinarian</a></li>
+      </ul>
+  </li>
+
+    
+    </div>
+    <!-- carousel-->
+    <div class="carousel">
+        <ul class="slides">
+          <input type="radio" name="radio-buttons" id="img-1" checked />
+          <li class="slide-container">
+            <div class="slide-image">
+              <img src="imgs/dog-walking-service-scaled.jpg">
+            </div>
+            <div class="carousel-controls">
+              <label for="img-3" class="prev-slide">
+                <span>&lsaquo;</span>
+              </label>
+              <label for="img-2" class="next-slide">
+                <span>&rsaquo;</span>
+              </label>
+            </div>
+          </li>
+          <input type="radio" name="radio-buttons" id="img-2" />
+          <li class="slide-container">
+            <div class="slide-image">
+              <img src="imgs/pet_training.jpg">
+            </div>
+            <div class="carousel-controls">
+              <label for="img-1" class="prev-slide">
+                <span>&lsaquo;</span>
+              </label>
+              <label for="img-3" class="next-slide">
+                <span>&rsaquo;</span>
+              </label>
+            </div>
+          </li>
+          <input type="radio" name="radio-buttons" id="img-3" />
+          <li class="slide-container">
+            <div class="slide-image">
+              <img src="imgs/pet-photography-service-scaled.jpg">
+            </div>
+            <div class="carousel-controls">
+              <label for="img-2" class="prev-slide">
+                <span>&lsaquo;</span>
+              </label>
+              <label for="img-4" class="next-slide">
+                <span>&rsaquo;</span>
+              </label>
+            </div>
+          </li>
+          <input type="radio" name="radio-buttons" id="img-4" />
+          <li class="slide-container">
+            <div class="slide-image">
+              <img src="imgs/veterinarian.jpg">
+            </div>
+            <div class="carousel-controls">
+              <label for="img-3" class="prev-slide">
+                <span>&lsaquo;</span>
+              </label>
+              <label for="img-1" class="next-slide">
+                <span>&rsaquo;</span>
+              </label>
+            </div>
+          </li>
+          <div class="carousel-dots">
+            <label for="img-1" class="carousel-dot" id="img-dot-1"></label>
+            <label for="img-2" class="carousel-dot" id="img-dot-2"></label>
+            <label for="img-3" class="carousel-dot" id="img-dot-3"></label>
+            <label for="img-4" class="carousel-dot" id="img-dot-4"></label>
+          </div>
+        </ul>
+      </div>
+      <!-- our services-->
+      <div class="container core">
+        <h1>OUR SERVICES</h1>
+        <p>Need daily walks?  Going on vacation?  Puppy have too much energy?  Check out our full menu of services!</p>
+        <a href="services.html"><button class="button-35" role="button">LEARN MORE</button></a>
+      </div>
+<!-- our core values -->
+<div class="core" style="margin: 0 auto; width:max-content; "><h1>OUR CORE VALUES</h1></div>
+<div class="wrapper">
+    <div class="box"><img src="imgs/charity.png" alt="">
+    <h3>Love of Animals</h3>
+    <p>Our passion and dedication to animals bonds us together and drives us to go above and beyond to put a smile on everyone's face. 
+      We lead with kindness and compassion to make sure all animals know how much we love them.</p></div>
+    <div class="box"><img src="imgs/peace.png" alt="">
+      <h3>Peace of Mind</h3>
+      <p>
+        Extraordinary communication and transparency builds the trust that our employees and pet parents deserve every day. 
+        We consistently deliver safe and reliable service that puts everyone at ease.
+      </p>
+    </div>
+    <div class="box"><img src="imgs/dog.png" alt="">
+      <h3>Bring Our Best</h3>
+      <p>With unwavering respect and inclusion we become one team. 
+        Our positivity connects us so we can support each other through rough patches and big wins.</p>
+      
+    </div>
+    <div class="box"><img src="imgs/paws.png" alt="">
+    <h3>Raise the Bar</h3>
+    <p>Our services are best in class and yet we strive to be even better every day. Through team development and innovation we will grow the Company, enhance the communities we serve, and set new standards for the industry.</p>
+    </div>
+</div>
+<!-- pop up for about us-->
+
+        
+<footer>
+  <div class="wrapper">
+
+                <ul>
+                  <u>
+                
+                    <div style="display: flex;">
+                      <img src="imgs/icons8-media-64.png" width="40px" height="40px" style="filter: invert(100%);">
+                      <h3>MEDIA</h3>
+                    </div>
+                </u>
+                <li ><a href="https://www.youtube.com/@DansPetCareOfficial">MEDIA</a></li>
+              <li><a href="#">BLOG</a></li>
+              <li><a href="#">GLOSSARY</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">PET RESOURCES</a></li>
+              <li><a href="#">ANIMAL FACTS</a></li>
+
+              </ul>
+
+  
+            <ul >
+              <u><div style="display: flex;"><img src="imgs/pawprint.png" alt="" width="40px" height="40px" style="filter: invert(100%);">
+                <h3>SERVICES</h3>
+              </div></u>
+
+              <li><a href="dogwalking.html">Pet Walking</a></li>
+              <li><a href="pettraining.html">Pet Training</a></li>
+              <li><a href="petphotography.html">Pet Photography</a></li>
+              <li><a href="veterinarian.html">Veterinarian</a></li>
+            
+            </ul>
+
+                
+
+              <ul>
+                <u><div style="display: flex;"><img src="imgs/icons8-location-50.png" alt="" width="40px" height="40px" style="filter: invert(100%);"><h3>LOCATIONS</h3></div></u>
+                <li>Brgy. Del Remedio, San Pablo City, Laguna</li>
+                <li></li>Brgy. Luta Del, Malvar, Batangas</li>
+              </ul>
+
+
+                
+            <ul >
+              <u><div style="display: flex;"><img src="imgs/telephone.png" alt="" width="40px" height="40px" style="filter: invert(100%);"><h3>CONTACTS</h3></div></u>
+              <li>+63900636740</li>
+              <li>rtmlrrd567@gmail.com</li>
+            </ul>
+
+      
+  </div>
+  <p style="font-size: 9.89; margin: 20px auto auto; text-align: center;">© 2022 Kalinga Alaga! All Rights Reserved.</p>
+</footer>
+
+
+      <script>
+        let popup = document.getElementById('popup');
+        let popup1 = document.getElementById('popup1');
+        let popup2 = document.getElementById('popup2');
+        let aboutus = document.getElementById('aboutus');
+        let whyus = document.getElementById('whyus');
+        function openpopup() {
+    // Set the content visibility first
+    popup1.style.display = "none";
+    popup2.style.display = "none";
+
+    // Add a single event listener for both links
+    document.addEventListener("click", function (event) {
+        if (event.target.id === "aboutus") {
+            popup1.style.display = "block";
+            popup2.style.display = "none";
+            popup.classList.add("open-popup");
+        } else if (event.target.id === "whyus") {
+            popup1.style.display = "none";
+            popup2.style.display = "block";
+            popup.classList.add("open-popup");
+        }
+    });
+}
+
+function closepopup() {
+    // Hide the popups and remove the "open-popup" class when closing
+    popup1.style.display = "none";
+    popup2.style.display = "none";
+    popup.classList.remove("open-popup");
+}
+function toggleDropdown() {
+    let menu = document.getElementById('menu');
+    let dropdown = document.getElementById('dropdown');
+    dropdown.style.display = (dropdown.style.display === 'none' || dropdown.style.display === '') ? 'block' : 'none';
+    menu.style.backgroundColor = (dropdown.style.display === 'block') ? '' : '';
+}
+function toggleDropdownforsignlog() {
+  
+    let signlog = document.getElementById('sign-log-icon');
+    let dropdown = document.getElementById('dropdown1');
+    dropdown.style.display = (dropdown.style.display === 'none' || dropdown.style.display === '') ? 'block' : 'none';
+    signlog.style.backgroundColor = (dropdown.style.display === 'block') ? '' : '';
+}
+
+  
+      </script>  
+</body>
+</html>

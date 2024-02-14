@@ -1,0 +1,65 @@
+.popup{
+    max-width: 700px;
+    width: 95%;
+    max-height: 600px;
+    height: 90%;
+    background: #F9F9E0;
+    border-radius: 6px;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: justify;
+    padding: auto;
+    color: #333;
+    visibility:hidden;
+    transition: transform 0.4s, top 0.4s;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 2999;
+    box-shadow: 0 24px 48px rgba(0, 0, 0, 0.4);
+    margin: auto;
+    overflow-y: auto;
+  }
+  .open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  .close {
+    font-size: 45px;
+    font-weight: 600;
+  }
+  .go-blur{
+    filter: blur(2px);
+  }
+
+ /* Add these styles to hide popups initially */
+#popup #popup1,
+#popup #popup2 {
+    display: none;
+}
+
+.thankYouMessage{
+  max-width: 600px;
+  width: 90%;
+  background: #fff;
+  border-radius: 15px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  left:50%;
+  transform: translate(-50%, -50%) scale(0.1);
+  text-align: center;
+  padding: 0 30px 30px;
+  color: #333;
+  visibility: hidden;
+  transition: transform 0.4s, top 0.4s;
+  z-index: 3000;
+  border: 1px solid;
+  box-shadow: 2px 2px 5px #444443;
+}
+
+.open-popup2{
+  visibility: visible;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1);
+}

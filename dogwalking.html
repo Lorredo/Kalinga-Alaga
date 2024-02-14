@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="petwalking.css">
+    <link rel="stylesheet" href="pop.css">
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="scrollbar.css">
+</head>
+<body>
+   
+    <div class="header-wrapper">
+        <div class="nav">
+            <a href="index.html"><img src="imgs/logo.png" alt="logo" width="100px" height="100px" style="float: left; margin: 10px 10px 10px 10px; "></a>
+            <div class="menu-container" id="menu-container">
+                <a href="#" class="menu" onclick="toggleDropdown()"><img src="imgs/menu.png" alt="" width="50px" height="50px"></a>
+                <ul class="dropdown" id="dropdown">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="dogwalking.html">Pet Walking</a></li>
+                    <li><a href="pettraining.html">Pet Training</a></li>
+                    <li><a href="petphotography.html">Pet Photography</a></li>
+                    <li><a href="veterinarian.html">Veterinarian</a></li>
+                </ul>
+            </div>
+        </div>
+        <h1 >
+            <strong class="strong">Dog Walking</strong><br>          
+            "Local, experienced dog walkers you can trust."</h1>
+    </div>
+    
+    
+    <div class="main">
+
+        <table border="1px">
+            <tr>
+                <th>Walk Length</th>
+                <th>Feeding</th>
+                <th>Water Change</th>
+                <th>Lots of Extra Love</th>
+                <th>Cost</th>
+            </tr>
+            <tr>
+                <td>15 Minutes</td>
+                <td ><img src="imgs/check.png" alt=""></td>
+                <td><img src="imgs/check.png" alt=""></td>
+                <td><img src="imgs/check.png" alt=""></td>
+                <td>₱500.00</td>
+            </tr>
+            <tr>
+                <td>30 Minutes</td>
+                <td ><img src="imgs/check.png" alt=""></td>
+                <td><img src="imgs/check.png" alt=""></td>
+                <td><img src="imgs/check.png" alt=""></td>
+                <td>₱800.00</td>
+            </tr>
+            <tr>
+                <td>50 Minutes</td>
+                <td ><img src="imgs/check.png" alt=""></td>
+                <td><img src="imgs/check.png" alt=""></td>
+                <td><img src="imgs/check.png" alt=""></td>
+                <td>₱1000.00</td>
+        </table>
+
+        <button class="button-34" role="button" id="buy" onclick="openpopup();">BUY PACKAGE</button>
+
+
+
+        <p style="margin-left: 10px; margin-right: 10px; margin-top: 40px; text-align: justify;">
+            "Experience the ultimate in professional and caring dog walking services with us. Our dedicated team of passionate dog lovers is committed to providing your furry friend with engaging walks tailored to their needs. We ensure your dog receives the exercise, socialization, and attention they deserve, promoting a happy and healthy lifestyle. Trust us to be your reliable partner in ensuring your canine companion's well-being while you're away. Choose the best for your four-legged friend - choose our premier dog walking service."</p>
+    <div class="gallery">
+        <img src="dogwalking-gallery/first.jpg">
+        <img src="dogwalking-gallery/second.jpg">
+        <img src="dogwalking-gallery/third.jpg">
+        
+    </div>
+    </div>
+    
+
+
+    <!-- for popup -->
+    <div class="popup" id="popup" style="padding: 20px 20px 40px;">
+        <form action="" method="post" id="form">
+            <span style="position:absolute; top:0px; right: 20px; cursor: pointer;" onclick="closepopup();" class="close">&times;</span>
+        
+            <label for="first-name">Name</label>
+            <input type="text" id="full-name" name="full-name" placeholder="Fullname" required>
+        
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="email" required>
+        
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="(e.g) 09999999999" required>
+    
+            <label for="address">Home Address:</label>
+            <textarea id="address" name="address" rows="4" required placeholder="Street/Town/City/State/Province/Postal Code/Country"></textarea>
+        
+            <label for="hear-about">How did you hear about us?</label>
+            <select id="hear-about" name="hear-about" required>
+                <option value="friend">Friend/Family</option>
+                <option value="internet">Internet Search</option>
+                <option value="social-media">Social Media</option>
+                <option value="advertisement">Advertisement</option>
+                <option value="other">Other</option>
+            </select>
+        
+            <label for="pet-type">What pets do you have?</label>
+            <select id="pet-type" name="pet-type" required>
+                <option value="dog">Dog</option>
+                <option value="cat">Cat</option>
+                <option value="bird">Bird</option>
+                <option value="fish">Fish</option>
+                <option value="other">Other</option>
+            </select>
+        
+            <label for="age-range">Pet(s) Age Range:</label>
+            <input type="text" id="age-range" name="age-range" required>
+        
+            <label for="pet-name">Pet(s) Name:</label>
+            <input type="text" id="pet-name" name="pet-name" required>
+        
+            <label for="start-date">Schedule of service</label>
+            <input type="date" id="start-date" name="start-date" required>
+        
+            <label for="training">Are you comfortable with our team members interacting with your pet?</label>
+            <label for="training-yes" class="label-radio">Yes<input type="radio" id="training-yes" name="training" value="Yes" class="inline" style="margin-left: 8px;"></label>
+            <label for="training-no" class="label-radio">No<input type="radio" id="training-no" name="training" value="No" class="inline" style="margin-left: 10px;"></label>
+        
+            <label for="additional-info">Anything else we should know about your pet?</label>
+            <textarea id="additional-info" name="additional-info" rows="4"></textarea>
+            <div class="button"><button type="submit" onclick="validateForm();" id="button">Submit</button></div>
+    
+        </form>
+        
+    </div>
+
+    <div class="thankYouMessage" id="thankYouMessage">
+        <h1>Thank You for Availing Our Pet Service Package!</h1>
+        <p>We appreciate your trust in our services. Your pet is in good hands, and we look forward to providing the best care.</p>
+        <a href="index.html">Ok</a>
+    </div>
+
+   
+    <script>
+       let buy = document.getElementById('buy');
+        let popup = document.getElementById('popup');
+
+        function openpopup(){
+            popup.classList.add("open-popup");
+            
+        }
+
+        function closepopup() {
+    // Hide the popups and remove the "open-popup" class when closing
+    popup.classList.remove("open-popup");
+}
+
+function validateForm() {
+            // Get all input elements within the form
+            let thankyou = document.getElementById('thankYouMessage');
+            let inputs = document.querySelectorAll('#form input');
+            let popup = document.getElementById('popup');
+            // Check if all inputs are filled
+            var allInputsFilled = Array.from(inputs).every(input => input.value.trim() !== '');
+            
+            // Display the appropriate message
+            if (allInputsFilled) {
+                event.preventDefault();
+                thankyou.classList.add("open-popup2");
+                popup.classList.remove("open-popup");
+            } else {
+                alert('Please fill up all information');
+                return false; // Prevent form submission
+            }
+        }
+
+        function toggleDropdown() {
+    let menucontainer = document.getElementById('menu-container');
+    let dropdown = document.getElementById('dropdown');
+    dropdown.style.display = (dropdown.style.display === 'none' || dropdown.style.display === '') ? 'block' : 'none';
+    menucontainer.style.backgroundColor = (dropdown.style.display === 'block') ? '#57A5B1' : '';
+}
+    </script>
+</body>
+</html>

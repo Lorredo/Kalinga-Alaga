@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="service.css">
+  <link rel="stylesheet" href="pop.css">
+  <link rel="stylesheet" href="button34.css">
+  <link rel="stylesheet" href="scrollbar.css">
+</head>
+<body>
+  <div class="header">
+    <a href="index.html"><img id="logo" src="imgs/logo.png" alt="logo"></a>
+    <div class="header-left">
+        <ul class="header-right">
+            <li class="nav nav1"><a href="#home" class="link">Our Services</a> 
+                <ul class="dropdown">
+                    <li ><a href="dogwalking.html">Pet Walking</a></li>
+                    <li><a href="pettraining.html">Pet Training</a></li>
+                    <li><a href="petphotography.html">Pet Photography</a></li>
+                    <li><a href="veterinarian.html">Veterinarian</a></li>
+                </ul>
+            </li>
+            
+            <li class="nav"><a id="aboutus" class="link" onclick="openpopup();">About Us</a></li>
+            <li class="nav"><a  id="whyus" class="link" onclick="openpopup();">Why Us?</a></li>
+        </ul>
+    </div>
+     <!-- about us and why us -->
+      <!-- about us and why us -->
+      <div class="popup" id="popup" style=" background-color: #F9F9E0; border-radius: 10px; padding: 20px 40px 40px;">
+        <div id="popup1" >
+            <span style=" position:absolute; top:0px; right: 20px; cursor: pointer;" onclick="closepopup();" class="close">&times;</span>
+            <h2 style="text-align: center; font-size: 25.89px; margin-bottom: 25px;">About Us</h2>
+        <p style=" font-size: 16px; line-height: 25px;">
+            Welcome to Kalinga Alaga, where passion meets care for your furry friends! At Kalinga Alaga, we understand the special bond you share with your pets, and we are dedicated to providing exceptional care and services to keep tails wagging and whiskers purring.
+            Our team of experienced and compassionate pet care specialists is committed to ensuring the well-being and happiness of your beloved companions. Whether it's pet walking, training, photography, or veterinary services, we go the extra mile to create a nurturing environment for your pets.
+            <br><br>What sets us apart is our unwavering commitment to quality, transparency, and the joy we find in caring for your pets as if they were our own. We pride ourselves on our professionalism, reliability, and the lasting relationships we build with both pets and their owners.
+            Join us in creating a world where pets thrive, tails are always high, and every paw print leaves a mark of happiness. Discover the Kalinga Alaga difference today!
+            Feel free to customize this brief to align with the specific values, services, and tone of your pet care service website.</p>
+        </div>
+
+        <div id="popup2">
+            <span style=" position:absolute; top:0px; right: 20px; cursor: pointer;" onclick="closepopup();" class="close">&times;</span>
+        <h2 style="text-align: center; font-size: 25.89px; ">Why you might choose us?</h2>
+        <p style=" font-size: 16px; line-height: 25px; margin-bottom: 12px;">
+            At Kalinga Alaga, we redefine pet care with unwavering dedication and unique offerings. Our services are available 24/7, ensuring your pet receives attention when they need it most. We're not just a service; we're a bonded and insured team committed to the safety and happiness of your furry family member. Our GPS-verified visits and dedicated professionals guarantee transparency, trust, and a personalized experience. Choose Kalinga Alaga for round-the-clock care and a team that treats your pet like one of our own.
+            Discover the Kalinga Alaga difference - where availability meets assurance, and every visit is a step towards a tail-wagging, whisker-purring partnership.
+        </p>
+        <img src="imgs/available+24_7.gif" alt="" width="100%" height="70%" style="box-shadow: 2px 2px 2px 2px rgb(0, 0, 0, 0.2) ;;">
+        </div>
+    </div>
+
+    
+
+   
+
+    <div class="button-container">
+    <a href="petservice/signup.html" class="signup" role="button">Signup</a>
+    <a href="petservice/login.html" class="login" role="button" >Login</a>
+</div>
+  <!-- for phone device menu bar and log-sign icon -->
+  <li id="sign-log-icon" class="nav1"><a href="#home" class="link" onclick="toggleDropdownforsignlog()"><img src="imgs/user-interface.png" alt="" width="40px" height="40px"></a> 
+    <ul class="dropdown1" id="dropdown1">
+        <li><a href="log-sign/login.html">Login</a></li>
+        <li><a href="log-sign/signup.html">Signup</a></li>
+    </ul>
+  </li>
+
+
+<li class="menu nav1" id="menu" style="float: none;"><a href="#home" class="link" onclick="toggleDropdown()"><img src="imgs/menu.png" alt="" width="40px" height="40px"></a> 
+<ul class="dropdown" id="dropdown">
+  <li class="nav"><a id="aboutus" class="link" onclick="openpopup();">About Us</a></li>
+        <li class="nav"><a  id="whyus" class="link" onclick="openpopup();">Why Us?</a></li>
+    <li ><a href="dogwalking.html">Pet Walking</a></li>
+    <li><a href="pettraining.html">Pet Training</a></li>
+    <li><a href="petphotography.html">Pet Photography</a></li>
+    <li><a href="veterinarian.html">Veterinarian</a></li>
+</ul>
+</li>
+
+
+</div>
+
+
+    <p id="pp">All of our services are delivered by a team of trained Pet Care Specialists, all of whom are fully bonded and insured. 
+      Each visit is tracked and verified with state-of-the-art GPS technology to let you know exactly when and where your pets are being cared for.</p>
+  <div class="main-container">
+    <div class="sub-container left">
+      <h1 class="font-design" style="margin-bottom: 20px;">Services</h1>
+      <ul class="left-nav">
+        <li class="nav-content"><a id="pet-walking" onclick="toggle()">PET WALKING</a>
+          </li>
+        <li class="nav-content"><a id="pet-training" onclick="toggle()">PET TRAINING</a></li>
+        <li class="nav-content"><a id="pet-photography" onclick="toggle()">PET PHOTOGRAPHY</a></li>
+        <li class="nav-content"><a id="veterinarian" onclick="toggle()">VETERINARIAN</a></li>
+      </ul>
+    </div>
+    
+      <div class="sub-container right">
+        <div id="first" class="sub-sub">
+            <img src="imgs/dog_walking-removebg-preview.png" alt="">
+            <div class="description-box">
+              <h1 class="font-design ">PET WALKING</h1>
+              <p class="description">All of our services are delivered by a team of trained Pet Care Specialists, all of whom are fully bonded and insured.  Each visit is tracked and verified with state-of-the-art GPS technology to let you know exactly when and where your pets are being cared for.<br><br>
+                Prices displayed are for one dog, each additional dog will incur an additional fee</p>
+                <a href="dogwalking.html" style="text-align: center;"><button class="button-34" role="button" style="margin: 0 auto; line-height: 20px;">VIEW PACKAGE & PRICING</button></a>
+              </div>
+              
+            </div>
+        
+        <div id="second" class="sub-sub">
+          <img src="imgs/dog-traning.png" alt="">
+          <div class="description-box">
+            <h1 class="font-design ">PET TRAINING</h1>
+            <p class="description">Our training philosophy:
+              TIME, PATIENCE, and CONSISTENCY.
+              <br><br>
+              At Dan's Pet Care, we want to create an environment that allows you to foster the Bond between you and your dog, and continue to build Trust in the relationship once these are met, through consistent work and disciplined follow-through you can develop your dog’s Obedience.</p>
+              <a href="pettraining.html " style="text-align: center;"><button class="button-34" role="button" style="margin: 0 auto; line-height: 20px;">VIEW PACKAGE & PRICING</button></a>
+            </div>
+        </div>
+
+        <div id="third" class="sub-sub">
+          <img src="imgs/dog-photography.png" alt="" >
+          <div class="description-box">
+            <h1 class="font-design ">DOG <br>
+              PHOTOGRAPHY</h1>
+            <p class="description">Capture the essence of your furry companions with our exceptional Pet Photography Service! At Kalinga Alaga, we specialize in creating timeless memories of your beloved pets. 
+              <br><br>Our skilled photographers have a unique talent for capturing the personality and charm of your animals, providing you with beautiful, high-quality images that you'll cherish forever. 
+              Whether it's a playful outdoor session, a cozy indoor shoot, or a heartwarming family portrait with your pets, we tailor our services to meet your specific needs. Book a session today and let us immortalize the joy, love, and unique moments shared with your furry friends. 
+              Trust Kalinga Alaga to deliver captivating images that celebrate the special bond you share with your pets.</p>
+              <a href="petphotography.html" style="text-align: center;"><button class="button-34" role="button" style="margin: 0 auto; line-height: 20px;">VIEW PACKAGE & PRICING</button></a>
+            </div>
+        </div>
+
+        <div id="fourth" class="sub-sub">
+          <img src="imgs/veterinarian-service.jpg" alt="">
+          <div class="description-box">
+            <h1 class="font-design ">VETERINARIAN</h1>
+            <p class="description">Ensure the health and happiness of your furry family members with our dedicated Pet Veterinary Services. Our compassionate team of experienced veterinarians is committed to providing top-notch care for your pets. 
+              <br><br>From routine check-ups to personalized treatment plans, we prioritize the well-being of your beloved animals. At Kalinga Alaga, we understand that every pet is unique, and we tailor our services to meet their specific needs. Put your pets' health in capable hands
+               - schedule an appointment today and experience the expertise and care that make us the preferred choice for pet owners country. Because when it comes to your pets, their health is our priority.</p>
+               <a href="veterinarian.html" style="text-align: center;"><button class="button-34" role="button" style="margin: 0 auto; line-height: 20px;">VIEW PACKAGE & PRICING</button></a>
+            </div>
+        </div>
+       
+      </div>
+</div>
+<footer>
+  <div class="wrapper">
+
+                <ul>
+                  <u>
+                
+                    <div style="display: flex;">
+                      <img src="imgs/icons8-media-64.png" width="40px" height="40px" style="filter: invert(100%);">
+                      <h3>MEDIA</h3>
+                    </div>
+                </u>
+                <li ><a href="https://www.youtube.com/@DansPetCareOfficial">MEDIA</a></li>
+              <li><a href="#">BLOG</a></li>
+              <li><a href="#">GLOSSARY</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">PET RESOURCES</a></li>
+              <li><a href="#">ANIMAL FACTS</a></li>
+
+              </ul>
+
+  
+            <ul >
+              <u><div style="display: flex;"><img src="imgs/pawprint.png" alt="" width="40px" height="40px" style="filter: invert(100%);">
+                <h3>SERVICES</h3>
+              </div></u>
+
+              <li><a href="dogwalking.html">Pet Walking</a></li>
+              <li><a href="pettraining.html">Pet Training</a></li>
+              <li><a href="petphotography.html">Pet Photography</a></li>
+              <li><a href="veterinarian.html">Veterinarian</a></li>
+            
+            </ul>
+
+                
+
+              <ul>
+                <u><div style="display: flex;"><img src="imgs/icons8-location-50.png" alt="" width="40px" height="40px" style="filter: invert(100%);"><h3>LOCATIONS</h3></div></u>
+                <li>Brgy. Del Remedio, San Pablo City, Laguna</li>
+                <li></li>Brgy. Luta Del, Malvar, Batangas</li>
+              </ul>
+
+
+                
+            <ul >
+              <u><div style="display: flex;"><img src="imgs/telephone.png" alt="" width="40px" height="40px" style="filter: invert(100%);"><h3>CONTACTS</h3></div></u>
+              <li>+63900636740</li>
+              <li>rtmlrrd567@gmail.com</li>
+            </ul>
+
+      
+  </div>
+  <p style="font-size: 9.89; margin: 20px auto auto; text-align: center;">© 2022 Kalinga Alaga! All Rights Reserved.</p>
+</footer>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+      let petwalking = document.getElementById('pet-walking');
+      let pettraining = document.getElementById('pet-training');
+      let petphotography = document.getElementById('pet-photography');
+      let veterinarian= document.getElementById('veterinarian');
+      let first = document.getElementById('first');
+      let second = document.getElementById('second');
+      let third = document.getElementById('third');
+      let fourth = document.getElementById('fourth');
+  
+      petwalking.addEventListener("click", function() {
+        first.style.display = "block";
+        second.style.display = "none";
+        third.style.display = "none";
+        fourth.style.display = "none";
+      });
+  
+      pettraining.addEventListener("click", function() {
+        first.style.display = "none";
+        second.style.display = "block";
+        third.style.display = "none";
+        fourth.style.display = "none";
+      });
+      petphotography.addEventListener("click", function() {
+        first.style.display = "none";
+        second.style.display = "none";
+        third.style.display = "block";
+        fourth.style.display = "none";
+      });
+      veterinarian.addEventListener("click", function() {
+        first.style.display = "none";
+        second.style.display = "none";
+        third.style.display = "none";
+        fourth.style.display = "block";
+      });
+    });
+
+
+    let popup = document.getElementById('popup');
+        let popup1 = document.getElementById('popup1');
+        let popup2 = document.getElementById('popup2');
+        let aboutus = document.getElementById('aboutus');
+        let whyus = document.getElementById('whyus');
+        function openpopup() {
+    // Set the content visibility first
+    popup1.style.display = "none";
+    popup2.style.display = "none";
+
+    // Add a single event listener for both links
+    document.addEventListener("click", function (event) {
+        if (event.target.id === "aboutus") {
+            popup1.style.display = "block";
+            popup2.style.display = "none";
+            popup.classList.add("open-popup");
+        } else if (event.target.id === "whyus") {
+            popup1.style.display = "none";
+            popup2.style.display = "block";
+            popup.classList.add("open-popup");
+        }
+    });
+}
+
+function closepopup() {
+    // Hide the popups and remove the "open-popup" class when closing
+    popup1.style.display = "none";
+    popup2.style.display = "none";
+    popup.classList.remove("open-popup");
+}
+
+function toggleDropdown() {
+    let menu = document.getElementById('menu');
+    let dropdown = document.getElementById('dropdown');
+    dropdown.style.display = (dropdown.style.display === 'none' || dropdown.style.display === '') ? 'block' : 'none';
+    menu.style.backgroundColor = (dropdown.style.display === 'block') ? '' : '';
+}
+function toggleDropdownforsignlog() {
+  
+    let signlog = document.getElementById('sign-log-icon');
+    let dropdown = document.getElementById('dropdown1');
+    dropdown.style.display = (dropdown.style.display === 'none' || dropdown.style.display === '') ? 'block' : 'none';
+    signlog.style.backgroundColor = (dropdown.style.display === 'block') ? '' : '';
+}
+
+  </script>
+</body>
+</html>

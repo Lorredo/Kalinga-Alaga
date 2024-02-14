@@ -1,0 +1,74 @@
+
+
+label {
+    display: block;
+    color: black;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 20px; /* Slightly reduced font size for better readability */
+    margin-top: 30px; /* Increased margin for better spacing */   
+}
+
+input,
+textarea,
+select {
+width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 5px;
+    padding: 10px; /* Reduced padding for a cleaner look */
+    margin-top: 10px;
+    margin-bottom: 15px; /* Increased bottom margin for better spacing */
+
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+}
+.checkbox-label label{
+   font-size: 16px;
+   margin-left: 10px; /* Added left margin for spacing */
+}
+
+.button {
+    width: 100%;
+    color: white;
+    padding: 12px 20px; /* Increased padding for a larger button */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', sans-serif;
+    margin-top: 20px; /* Increased top margin for better separation */
+    display: flex;
+    justify-content: end;
+    align-items: end;
+
+}
+
+.button button{
+    padding: 12px 20px;
+    background-color: #FF90BC;
+}
+
+button:hover{
+
+        background-color: #FFC0D9; /* Lighter shade on hover */
+
+}
+
+.inline {
+width: unset;
+vertical-align: middle;
+margin: 5px 10px 5px 0;
+font-size: 16px;
+width: 20px;
+height: 20px;
+}
+
+
+.label-checkbox, .label-radio{
+    font-size: 16px;
+    margin-left: 20px;
+}
+

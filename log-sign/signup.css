@@ -1,0 +1,163 @@
+
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url('paw.jpg');
+    background-size: cover;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh
+}
+
+
+.background-image {
+    background-size: cover;
+  background-position:absolute;
+  background-repeat: no-repeat;
+    filter: brightness(0.9); /* Adjust the brightness of the image */
+}
+.login-container{
+    margin: 0 auto;
+}
+.login-form-container{
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    border-radius: 50px;
+    border: #070707;
+    max-width: 600px;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+input {
+    border: 1px solid #979595;
+    outline:#070707;
+    border-radius: 5px;
+    max-width: 350px;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 60px;
+    box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.login-form-container h1 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #070707;
+    opacity: 100%;
+}
+
+.logo {
+    
+    top: 20px;
+    right: 20px;
+    width: 80px ; 
+    height: 80px;
+   
+}
+
+.btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #FF90BC;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.59); 
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+.btn:hover {
+    transform: scale(1.1);
+    background-color: #FFC0D9;
+}
+.a:link, a:visited {
+    border-radius: 12px;
+    color: rgb(3, 3, 3);
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+.login-form-container p {
+    text-decoration: none;
+    
+    /* Remove any default margin */
+}
+
+.login-form-container a {
+    text-decoration: none;
+    color: inherit; /* Use the color of the parent container */
+}
+
+a:hover{
+color: #FF90BC;
+}
+/* for popup */
+.popup {
+    z-index: 2;
+    width: 400px;
+    background: #fff;
+    border-radius: 15px;
+    position: absolute;
+    top:0;
+    left:50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+.open-popup{
+    visibility: visible;
+    top:50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.popup img{
+   width: 100px;
+   margin-top: -50px;
+   border-radius: 50%;
+   box-shadow: 0 2px  5px rgba(0, 0, 0, 0.2);
+}
+.popup h2{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+.popup button{
+    width: 100%;
+    margin-top: 50PX;
+    padding: 10px 0;
+    background: #6fd649;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px  5px rgba(0, 0, 0, 0.2);
+}
+  .close {
+    font-size: 45px;
+    font-weight: 600;
+  }

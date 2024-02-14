@@ -1,0 +1,194 @@
+*{
+    box-sizing: border-box;
+    font-kerning: normal;
+}
+body{
+    margin: 0;
+    background-color: #fff;
+    font-family: 'Trebuchet MS', sans-serif;
+    text-align: center;
+    padding-bottom: 20px;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.header-wrapper h1{
+    background-color: #8ACDD7;
+    text-align: center; 
+    font-family: 'Trebuchet MS', sans-serif; 
+    color: white; 
+    font-size: 25.89px;
+     padding: 100px 0 150px;
+     margin: 0;
+}
+.strong{
+    font-size: 67.77px;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #8ACDD7;
+}
+
+.main{
+    margin: auto 5%;
+}
+table {
+    border-collapse: collapse;
+    margin: 20px auto;
+    width: 70%; /* Adjust the width as needed */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    
+    border: 1px solid #f2f2f2;
+    padding: 20px;
+    text-align: center;
+    font-size: 16px;
+}
+
+th {
+    background-color: #ff99cc; /* Pink */
+    color: #fff;
+    border-radius: 5px;
+}
+
+tr:nth-child(even) {
+    background-color: #fff;
+}
+
+tr:nth-child(odd) {
+    background-color: #ffe6f2; /* Light Pink */
+}
+
+table img {
+    width: 20px;
+    height: 20px;
+}
+
+p{
+    font-size: 16px;
+}
+.button-34 {
+    background: #FF90BC;
+    border-radius: 999px;
+    box-shadow: #FF90BC 0 10px 20px -10px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family:'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 40px;
+    opacity: 1;
+    outline: 0 solid transparent;
+    padding: 6px 12px;
+    margin: 0;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 180px;
+    word-break: break-word;
+    border: 0;
+    border: 1px solid rgb(210, 76, 154);
+    text-transform: capitalize;
+  }
+  .button-34:hover{
+      background-color: #FFC0D9;
+  }
+
+  .gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 10px;
+  }
+  
+  .gallery img {
+    width: 100%;
+    max-width: 350px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .gallery::after {
+    content: "";
+    width: 350px;
+  }
+
+
+/* menu dropdown */
+.menu-container{
+    float: right;
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+
+ul.dropdown {
+    list-style: none;
+    display: none;
+    background-color: #57A5B1;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border: none;
+    padding: 0;
+    position: absolute;
+    z-index: 1000;
+    top: 80%; /* Position the dropdown below the menu icon */
+    right: 0;
+    width: 200px; /* Make the dropdown full-width */
+}
+
+
+ul.dropdown li {
+    width: 100%;
+    text-align: center;
+    line-height: 15px;
+    padding: 15px;
+}
+ul.dropdown li a {
+    width: 100%;
+    padding: 10px 25px;
+    text-decoration: none;
+    color: white;
+}
+
+ul.dropdown li a:hover {
+    color: #1A1A1A;
+}
+ul.dropdown li:hover{
+    border-bottom: 0.5px groove  #417b84;
+    border-top: 0.5px groove  #417b84;
+   
+}
+
+
+@media only screen and (max-width: 500px){
+    th, td {
+    
+        padding: 10px;
+        font-size: 9.89px;
+    }
+}
+@media only screen and (max-width: 450px){
+    .strong{
+        font-size: 41.89px;
+    }
+    .header-wrapper h1{
+        font-size: 16px;
+    }
+  }

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="forgot.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="popup" id="popup" >
+        <img src="check.png">
+        <h2>Already done</h2>
+        <p>Password reset successfully!</p>
+        <a href="login.html"><button type="button" onclick="loginPage()" >OK</button></a>
+      </div>
+    <div class="login-container" id="mawawala">
+        <form class="login-form-container">
+            <img src="logo.png" alt="Pet Service Logo" class="logo">
+            <h1>Forgot Password</h1>
+            <input type="text" id="old" name="username" placeholder="old password" required>
+            <input type="password" id="new" name="newpassword" placeholder="new password" required>
+            <input type="password" id="con" name="conpassword" placeholder="confirm new password" required>
+            <button type="submit" class="btn" onclick="validateLogin()"> Submit</button>
+            
+        </form>
+    </div>
+    <script>
+        function validateLogin() {
+            var old = document.getElementById('old').value;
+            var neww = document.getElementById('new').value;
+            var con = document.getElementById('con').value;
+            var popupDiv = document.getElementById('popup');
+            let mawawala = document.getElementById('mawawala');
+            
+    
+            // Check if both inputs have values
+            if (old && neww && con) {
+                // Prevent form submission
+                event.preventDefault();
+                // Perform login logic or any other action here
+                // Show the popup
+                popupDiv.classList.add("open-popup");
+                mawawala.style.display = 'none';
+            } else {
+                // Display an error message if either input is empty
+                alert('Put some informations to sign up..');
+                return false; // Prevent form submission
+            }
+        }
+        function ClosePopup() {
+            var popupDiv = document.getElementById('popup');
+            popupDiv.classList.remove("open-popup");
+        }
+    
+    // Hide the notification
+    var notification = document.getElementById("notification");
+    notification.style.display = "none";
+
+    // Show the login page
+    var loginPage = document.getElementById("loginPage");
+    loginPage.style.display = "block";
+    
+    function loginPage() {
+            window.location.href ="login.html";
+    }
+        </script>
+</body>
+</html>
